@@ -14,7 +14,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_TOKEN }}
+        password: ${{ secrets.DOCKER_TOKEN }}  # Dùng TOKEN mới
 
     - name: Build & Push Vote Image
       run: |
